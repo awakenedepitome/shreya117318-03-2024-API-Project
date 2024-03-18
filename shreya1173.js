@@ -8,8 +8,8 @@ async function createInvestmentAccount() {
     const data = {
         name: 'Shreya',
         email: 'shreya1173.be21@chitkarauniversity.edu.in',
-        rollNumber: 2111981173,
-        phone: 9878395484
+        rollNumber: 2111001173,
+        phone: 0000000000
     };
 
     try {
