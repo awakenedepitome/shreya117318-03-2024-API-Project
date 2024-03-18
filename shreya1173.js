@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-// Function to create an investment account
 async function createInvestmentAccount() {
     const url = 'https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/createAccount';
     const headers = {
@@ -16,14 +15,13 @@ async function createInvestmentAccount() {
     try {
         const response = await axios.post(url, data, { headers: headers });
         const accountNumber = response.data.accountNumber;
-        console.log('Account Number:', accountNumber); // Log the account number
+        console.log('Account Number:', accountNumber); 
         return accountNumber;
     } catch (error) {
         console.error(error.response.data);
     }
 }
 
-// Function to buy stocks
 async function buyStocks() {
     const accountNumber = await createInvestmentAccount();
 
@@ -47,5 +45,4 @@ async function buyStocks() {
     }
 }
 
-// Call the function to buy stocks
 buyStocks();
