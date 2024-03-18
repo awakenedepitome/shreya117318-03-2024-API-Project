@@ -28,7 +28,7 @@ async function buyStocks() {
     const url = 'https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks';
     const headers = {
         'Content-Type': 'application/json',
-        'bfhl-auth': 2111981173
+        'bfhl-auth': 2111001173
     };
     const data = {
         company: 'Bajaj Finserv',
